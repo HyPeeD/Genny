@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Genny - Web Commands</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+  <div id="navbar">
+<div class="buttons">
+  <br>
+    <a href="#"><img src="https://cdn.glitch.com/a251574f-138b-4148-87c3-6522174a3c0c%2FGenny2.png?v=1578829313054" class="logo"></a>
+      <a href="./commands.html" data-url="./commands"><button class="btn btn-primary btn-ghost btn-breach">
+          Commands
+      </button></a>
+      <button class="btn btn-primary btn-ghost btn-open">
+          Support
+      </button>
+      <button class="btn btn-primary btn-ghost btn-close">
+          Vote
+      </button>
+      <button class="btn btn-primary btn-ghost btn-slash">
+          Add
+      </button>
+  </div>
+  </div>
+<section>
+  <div class="tbl-header">
+    <canvas id="canvas"></canvas>
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+          <th>Type</th>
+          </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td>!!ban</td>
+          <td>!!ban @User</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!unban</td>
+          <td>!!unban ID/All (All : To unban all users banned!)</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!mute</td>
+          <td>!!mute @User</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!unmute</td>
+          <td>!!unmute @User</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!vmute</td>
+          <td>!!vmute @User (for voice mute)</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!vunmute</td>
+          <td>(for voice unmute)</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!setnick</td>
+          <td>To change nicknames for others</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!move</td>
+          <td>!!move @User to your voice channel</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!setReport</td>
+          <td>!!setReport #channelname (bot will send reports)</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!warn</td>
+          <td>To warn a member</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!purge</td>
+          <td>To prune messages on a channel</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!roleinfo</td>
+          <td>to get info role</td>
+          <td>🔨 Moderation</td>
+          </tr>
+        <tr>
+          <td>!!gcreate</td>
+          <td>to create an awesome giveaway </td>
+          <td>No specific Type</td>
+          </tr>
+        <tr>
+          <td>!!gif</td>
+          <td>search gif Usage : !!gif (args)</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!kiss</td>
+          <td>kiss gifs</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!neko</td>
+          <td>neko images</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!hug</td>
+          <td>hug gifs</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!pat</td>
+          <td>pat gifs</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!tickle</td>
+          <td>tickle gifs</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!poke</td>
+          <td>poke gif</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!cuddle</td>
+          <td>cuddle gifs</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!slap</td>
+          <td>slap gifs</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!ngif</td>
+          <td>neko gifs</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!wallpaper</td>
+          <td>anime gifs</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!feed</td>
+          <td>feed gifs</td>
+          <td>📷 Image</td>
+          </tr>
+        <tr>
+          <td>!!fuck</td>
+          <td>fuck gifs</td>
+          <td>❗ Nsfw</td>
+          </tr>
+        <tr>
+          <td>!!pussy</td>
+          <td>pussy gifs/imgs</td>
+          <td>❗ Nsfw</td>
+          </tr>
+        <tr>
+          <td>!!boobs</td>
+          <td>boobs gif/imgs</td>
+          <td>❗ Nsfw</td>
+          </tr>
+        <tr>
+          <td>!!blowjob</td>
+          <td>blowjob gifs/imgs</td>
+          <td>❗ Nsfw</td>
+          </tr>
+        <tr>
+          <td>!!anal</td>
+          <td>anal gifs</td>
+          <td>❗ Nsfw</td>
+          </tr>
+        <tr>
+          <td>!!trap</td>
+          <td>trap gifs</td>
+          <td>❗ Nsfw</td>
+          </tr>
+        <tr>
+          <td>!!yuri</td>
+          <td>yuri gifs</td>
+          <td>❗ Nsfw</td>
+          </tr>
+                  <tr>
+          <td>!!feet</td>
+          <td>feet gifs</td>
+          <td>❗ Nsfw</td>
+          </tr>
+                  <tr>
+          <td>!!king</td>
+          <td>king image meme</td>
+          <td>💯 Meme</td>
+          </tr>
+                  <tr>
+          <td>!!wasted</td>
+          <td>wasted image meme</td>
+          <td>💯 Meme</td>
+          </tr>
+                  <tr>
+          <td>!!sniper</td>
+          <td>sniper image meme</td>
+          <td>💯 Meme</td>
+          </tr>
+                  <tr>
+          <td>!!trigger</td>
+          <td>trigger gif meme</td>
+          <td>💯 Meme</td>
+          </tr>
+                  <tr>
+          <td>!!vaporwave</td>
+          <td>vaporwave text : Genny => Ｇｅｎｎｙ</td>
+          <td>🎉 Fun</td>
+          </tr>
+          <td>!!ters</td>
+          <td>ters text : Genny => ʎuuǝפ</td>
+          <td>🎉 Fun</td>
+          </tr>
+                  <tr>
+          <td>!!8ball</td>
+          <td>ask the magic 8ball with question mark at end and it will anwer (Yup , idk , and more...)</td>
+          <td>🎉 Fun</td>
+          </tr>
+                  <tr>
+          <td>!!slots</td>
+          <td>game slots</td>
+          <td>🎉 Fun</td>
+          </tr>
+                  <tr>
+          <td>!!ascii</td>
+          <td>to ascii some thing</td>
+          <td>🎉 Fun</td>
+          </tr>
+                  <tr>
+          <td>!!coinflip</td>
+          <td>for coinflip</td>
+          <td>🎉 Fun</td>
+          </tr>
+              <tr>
+          <td>!!invites</td>
+          <td>seen your invites</td>
+          <td>❓ Misc</td>
+          </tr>
+          <tr>
+          <td>!!remindme</td>
+          <td>Genny reminder :)</td>
+          <td>❓ Misc</td>
+          </tr>
+         <tr>
+          <td>!!server</td>
+          <td>for serverinfo</td>
+          <td>❓ Misc</td>
+          </tr>
+         <tr>
+          <td>!!user</td>
+          <td>show user info</td>
+          <td>❓ Misc</td>
+          </tr>
+         <tr>
+          <td>!!id</td>
+          <td>show user id</td>
+          <td>❓ Misc</td>
+          </tr>
+      </tbody>
+              <tr>
+          <td>!!random</td>
+          <td>to get a random real name from the server</td>
+          <td>❓ Misc</td>
+          </tr>
+               <tr>
+          <td>!!discrim</td>
+          <td>show users who have same discrim</td>
+          <td>❓ Misc</td>
+          </tr>
+            <tr>
+          <td>music</td>
+          <td>Music disabled 😞</td>
+          <td>🎶 music</td>
+          </tr>
+    </table>
+</section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./main.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
+</body>
+</html>
